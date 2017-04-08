@@ -15,7 +15,7 @@ class Stack
     return nil if @top.nil?
     top = @top
     @top = top.next_node
-    top
+    top.value
   end
 
   def peek

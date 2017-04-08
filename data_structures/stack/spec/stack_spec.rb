@@ -20,8 +20,8 @@ RSpec.describe Stack do
 
     it "returns the last element added" do
       stack.push(5)
-      a = stack.push(10)
-      expect(pop).to eq(a)
+      stack.push(10)
+      expect(pop).to eq(10)
     end
 
     it "shortens the stack length" do
