@@ -6,7 +6,7 @@ def binary_search(array, target)
   min = 0
   max = array.length - 1
   while min <= max
-    mid = (min + max)/2 #must put min + max in brackets, else ruby runs it as: min + (max/2)
+    mid = (min + max)/2
     if array[mid] > target
       max = mid - 1
     elsif array[mid] < target
